@@ -16,7 +16,6 @@ body{
     position: sticky;
     top: 0;
     z-index: 5;
-    -webkit-backdrop-filter: blur(50px);
 }
 
 .navbar a{
