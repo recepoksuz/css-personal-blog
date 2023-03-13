@@ -13,8 +13,10 @@ body{
     display: flex;
     justify-content: center;
     font-weight: bold;
-    position:static;
-    z-index: 100;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .navbar a{
@@ -43,14 +45,21 @@ body{
     height: 30px;
     justify-content: center;
     align-items: center;
-    color: #f1f1f1;
+    color: white;
     position: sticky;
+    text-decoration: none;
 }
 
 .content{
     margin: 40px 20px;
     display: flex;
     justify-content: center;
+
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -120,7 +129,7 @@ body{
 
 .linksCard{
     width: 350px;
-    height: 400px;
+    height:auto;
     margin-top: 25px;
     border-radius: 5px;
     background-color: white;
@@ -131,8 +140,15 @@ body{
 }
 
 .linksCard li{
-    padding: 7.5px 25px;
+    padding: 18px 25px;
     list-style-type: none;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 3px rgb(187, 187, 187);
+}
+
+.linksCard li:hover{
+    background-color: #f1f1f1;
+    transition: 0.4s;
 }
 
 .linksCard hr{
@@ -146,8 +162,9 @@ body{
     font-weight: 450;
 }
 
-.contentTitle{
-    display: flex;
+.contentHeader{
+    display: inline-flex;
+    align-items: center;
     background-color: white;
     border-radius: 6px;
     margin: 10px 30px;
@@ -156,5 +173,175 @@ body{
     width: 670px;
     height: 80px;
     padding-left: 30px;
+}
+
+.content1{
+    height: 240px;
+    width: 640px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c1Top{
+    display: flex;
     align-items: center;
 }
+
+.c1Banner{
+    width: 120px;
+    height: 120px;
+    background-image: url("assets/image/banners/c1.png");
+    background-size: cover;
+    background-position: start;
+}
+
+.text{
+    padding-left: 20px;
+}
+.c1Title{
+    font-weight: 500px;
+    font-size: large;
+    font-size: 23px;
+}
+
+.c1Discription{
+    max-width: 480px;
+}
+
+.c1Buttom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1Izle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.content2{
+    height: 240px;
+    width: 640px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c2Top{
+    display: flex;
+    align-items: center;
+}
+
+.c2Banner{
+    width: 120px;
+    height: 120px;
+    background-image: url("assets/image/banners/c2.png");
+    background-size: cover;
+    background-position: start;
+}
+
+.c2Title{
+    font-weight: 500px;
+    font-size: large;
+    font-size: 23px;
+}
+
+.c2Discription{
+    max-width: 480px;
+}
+
+.c2Buttom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c2Izle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.content3{
+    height: 240px;
+    width: 640px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.c3Top{
+    display: flex;
+    align-items: center;
+}
+
+.c3Banner{
+    width: 120px;
+    height: 120px;
+    background-image: url("assets/image/banners/c3.png");
+    background-size: cover;
+    background-position: start;
+}
+
+.text{
+    padding-left: 20px;
+}
+.c3Title{
+    font-weight: 500px;
+    font-size: large;
+    font-size: 23px;
+}
+
+.c3Discription{
+    max-width: 480px;
+}
+
+.c3Buttom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c3Izle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 3px;
+    text-decoration: none;
+}
+
+
+
